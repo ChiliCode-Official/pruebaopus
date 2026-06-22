@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Preload original fonts for immediate presentation -->
+	<link rel="preload" href="./assets/fonts/zentry-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="./assets/fonts/robert-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="./assets/fonts/robert-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="./assets/fonts/general.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	
+	<!-- Favicon & Icons -->
+	<link rel="shortcut icon" href="./assets/img/favicon.ico">
+	<link rel="manifest" href="./manifest.json">
+	<link rel="apple-touch-icon" href="./assets/img/logo-icon.svg">
+	
+	<!-- Primary SEO Meta Tags -->
+	<title>OPULENCE | Engineered Luxury E-Commerce</title>
+	<meta name="description" content="Colección exclusiva de objetos de hiper-lujo. Ingeniería de precisión, materiales aeroespaciales y estética minimalista extrema.">
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://tilinrodrigo3.github.io/pruebaopus/">
+	<meta property="og:title" content="OPULENCE | Engineered Luxury E-Commerce">
+	<meta property="og:description" content="Colección exclusiva de objetos de hiper-lujo. Ingeniería de precisión, materiales aeroespaciales y estética minimalista extrema.">
+	<meta property="og:image" content="./assets/img/entrance.webp">
+
+	<!-- Original script loaded as a standard script to prevent CORS blocks on local file:// protocol -->
+	<script src="./js/index.min.js?v=1757083809506"></script>
+
+	<!-- Original CSS Stylesheets -->
+	<link rel="stylesheet" href="./css/index.min.css?v=1757083809506">
+	
+	<!-- Custom Shop Stylesheet -->
+	<link rel="stylesheet" href="./css/shop.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Original Navigation Header with OPULENCE branding -->
+		<header data-fls-header="" class="header" data-fls-header-scroll="" data-fls-header-scroll-show="">
+			<div class="header__wrapper">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<div class="menu__left-side">
+							<a href="#/" class="menu__logo" style="font-family:'Space Grotesk',sans-serif; font-weight:700; letter-spacing:0.25em;">OPULENCE</a>
+							<a class="menu__btn btn --icon-cursor-r" href="#/shop">
+								<span class="btn__label">
+									<span class="btn__main">CATÁLOGO</span>
+									<span class="btn__alt">ADQUIRIR YA!</span>
+								</span>
+							</a>
+						</div>
+						<div class="menu__body-wrapper">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#/" class="menu__link">Historia</a>
+									</li>
+									<li class="menu__item">
+										<a href="#/shop" class="menu__link">Shop</a>
+									</li>
+									<li class="menu__item">
+										<a href="#/admin" class="menu__link">Admin</a>
+									</li>
+									<li class="menu__item">
+										<a href="#about" class="menu__link">Diseño</a>
+									</li>
+									<li class="menu__item">
+										<a href="#contact" class="menu__link">Contacto</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="menu__action">
+								<!-- Original Music Toggle Button -->
+								<button type="button" class="menu__audio-toggle --icon-music" aria-label="Toggle audio"
+									aria-pressed="false" data-fls-dynamic=".menu__body, 385, 1">
+									<div class="menu__audio-icon">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</button>
+								
+								<!-- Premium Shopping Cart Button in Header -->
+								<button type="button" onclick="openCartDrawer()" class="menu__cart-btn" aria-label="Open shopping cart">
+									CART
+									<span class="cart-count" style="display: none;">0</span>
+								</button>
+
+								<button type="button" data-fls-menu="" class="menu__icon icon-menu"
+									aria-label="Toggle menu">
+									<span></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Original landing page container (Toggled block/none in routing) -->
+		<main class="page page--home">
+			
+			<!-- Hero section with background video clicks and text labels -->
+			<section class="hero" id="home" aria-label="Hero">
+				<div class="hero__wrapper wrapper__container">
+					<h1 class="visually-hidden">OPULENCE: Engineered Luxury</h1>
+					<div class="hero__row">
+						<div class="hero__stage">
+							<video id="next-video" class="hero__next-video" loop muted playsinline=""></video>
+							<video id="bg-video" class="hero__bg" autoplay muted playsinline="" loop
+								preload="auto"></video>
+						</div>
+						<div class="hero__mini">
+							<div class="hero__mini-inner" id="mini-click" title="Watch next">
+								<video id="current-video" class="hero__mini-video" loop muted playsinline=""></video>
+							</div>
+						</div>
+						<div class="hero__container">
+							<div class="hero__content" id="video-frame">
+								<div class="hero__copy">
+									<h2 class="hero__label">redefinir</h2>
+									<p class="hero__subtitle">Materiales Aeroespaciales • Ingeniería de Alta Gama</p>
+									<a class="hero__btn btn btn--light-gr --icon-cursor-l" href="#/shop">
+										<span class="btn__label">
+											<span class="btn__main">VER COLECCIÓN</span>
+											<span class="btn__alt">ADQUIRIR AHORA!</span>
+										</span>
+									</a>
+								</div>
+							</div>
+							<h2 class="hero__label hero__label--top">OPULENCE</h2>
+						</div>
+					</div>
+					<h2 class="hero__label hero__label--inside">OPULENCE</h2>
+				</div>
+			</section>
+			
+			<!-- About section with mask scale scroll animation -->
+			<section id="about" class="about">
+				<h2 class="visually-hidden">Sobre OPULENCE</h2>
+				<div class="about__container">
+					<p class="about__eyebrow">Bienvenido a OPULENCE</p>
+					<h3 class="about__title anim-title">Descubre el diseño de precisión matemática</h3>
+					<div class="about__subtext">
+						<p>La era de la rigurosidad comienza — su estilo de vida, tallado en materiales nobles</p>
+						<p>OPULENCE une a los coleccionistas más exigentes de piezas de edición limitada</p>
+					</div>
+				</div>
+				<div class="about__viewport" id="clip">
+					<div class="about__image mask-clip-path">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/about-600.webp" type="image/webp">
+							<source media="(max-width: 1200px)" srcset="./assets/img/about-1200.webp" type="image/webp">
+							<img alt="Background" loading="lazy" class="about__img" src="./assets/img/about.webp">
+						</picture>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Discover section with interactive tilt elements and videos -->
+			<section class="discover" id="discover" aria-labelledby="discover-title">
+				<div class="discover__container">
+					<div class="discover__top">
+						<h2 class="discover__title" id="discover-title">Ingeniería Estética Avanzada</h2>
+						<div class="discover__text">
+							<p>
+								Sumérjase en un catálogo exclusivo donde el titanio, el carbono y las complicaciones relojeras mecánicas se unen en obras de arte funcionales.
+							</p>
+						</div>
+					</div>
+					<div class="discover__inner">
+						<article class="discover__item js-tilt">
+							<div class="discover__tilt">
+								<div class="discover__item-content">
+									<h3 class="discover__item-title">CHRONO X</h3>
+									<p class="discover__item-text">
+										Un cronógrafo mecánico que combina titanio y zafiro estructural con un movimiento de doble tourbillon.
+									</p>
+								</div>
+								<video class="discover__item-video" src="./files/feature-1.mp4" autoplay muted loop
+									playsinline=""></video>
+							</div>
+						</article>
+						<article class="discover__item js-tilt">
+							<div class="discover__tilt">
+								<div class="discover__item-content">
+									<h3 class="discover__item-title">COUTURE</h3>
+									<p class="discover__item-text">Casco moldeado a presión en fibra de carbono autoclave y acabados de metal líquido.</p>
+								</div>
+								<video class="discover__item-video" src="./files/feature-2.mp4" autoplay muted loop
+									playsinline=""></video>
+							</div>
+						</article>
+						<article class="discover__item js-tilt">
+							<div class="discover__tilt">
+								<div class="discover__item-content">
+									<h3 class="discover__item-title">MONOLITH</h3>
+									<p class="discover__item-text">
+										Consola acústica esculpida a partir de un solo bloque de obsidiana natural y conectores de oro de 24K.
+									</p>
+								</div>
+								<video class="discover__item-video" src="./files/feature-3.mp4" autoplay muted loop
+									playsinline=""></video>
+							</div>
+						</article>
+						<article class="discover__item js-tilt">
+							<div class="discover__tilt">
+								<div class="discover__item-content">
+									<h3 class="discover__item-title">ECLIPSE</h3>
+									<p class="discover__item-text">Anillo de platino cepillado a mano con un diamante negro central que absorbe la luz.</p>
+								</div>
+								<video class="discover__item-video" src="./files/feature-4.mp4" autoplay muted loop
+									playsinline=""></video>
+							</div>
+						</article>
+						<article class="discover__item js-tilt">
+							<div class="discover__tilt">
+								<div class="discover__item-content">
+									<h3 class="discover__item-title visually-hidden" aria-hidden="true">Aether Shield Preview</h3>
+								</div>
+								<video class="discover__item-video" src="./files/feature-5.mp4" autoplay muted loop
+									playsinline=""></video>
+							</div>
+						</article>
+						<article class="discover__item discover__item--color js-tilt" data-tilt-glare="true">
+							<div class="discover__tilt">
+								<div class="discover__item-content">
+									<h3 class="discover__item-title">Más Próximamente!</h3>
+									<div class="discover__icon --icon-cursor-r" aria-hidden="true"></div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Story section with 3D card tilt effect -->
+			<section class="story" id="story">
+				<div class="story__container">
+					<p class="story__pretitle">Materiales Aeroespaciales</p>
+					<div class="story__wrap">
+						<h2 class="story__title anim-title">
+							La historia de
+							<br>
+							un diseño absoluto
+						</h2>
+						<div class="story__image">
+							<div class="story__image-area js-tilt-area" data-tilt-area="" data-tilt-max="12">
+								<div class="story__image-inner" data-tilt-target="">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/entrance-600.webp"
+											type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/entrance-1200.webp"
+											type="image/webp">
+										<img class="story__image-img js-tilt-frame" alt="entrance" loading="lazy"
+											draggable="false" src="./assets/img/entrance.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- CTA Section with mouse parallax items -->
+			<section class="cta" id="contact" aria-labelledby="cta-title">
+				<div class="cta__container">
+					<div class="cta__content">
+						<div class="cta__label">Ingrese a OPULENCE</div>
+						<h2 class="cta__title anim-title" id="cta-title">
+							EXPERIMENTE EL
+							<br>
+							LUJO DE EDICIÓN LIMITADA CON NOSOTROS
+						</h2>
+						<a class="cta__button btn" href="#/shop">
+							<span class="btn__label">
+								<span class="btn__main">EXPLORAR SHOP</span>
+								<span class="btn__alt">ADQUIRIR YA!</span>
+							</span>
+						</a>
+						<div class="cta__decor decor">
+							<div class="decor__item decor__item--1" data-fls-mouse="" data-fls-mouse-dyr="">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/contact-1-600.webp"
+										type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/contact-1-1200.webp"
+										type="image/webp">
+									<img class="decor__img" alt="" loading="lazy" src="./assets/img/contact-1.webp">
+								</picture>
+							</div>
+							<div class="decor__item decor__item--2" data-fls-mouse="">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/contact-2-600.webp"
+										type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/contact-2-1200.webp"
+										type="image/webp">
+									<img class="decor__img" alt="" loading="lazy" src="./assets/img/contact-2.webp">
+								</picture>
+							</div>
+							<div class="decor__item decor__item--3" data-fls-mouse="" data-fls-mouse-dxr="">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/swordman-600.webp"
+										type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/swordman-1200.webp"
+										type="image/webp">
+									<img class="decor__img" alt="" loading="lazy" src="./assets/img/swordman.webp">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- SPA Mount Point for Shop, details and admin -->
+		<div id="spa-viewport" style="display: none;"></div>
+
+		<!-- Audio element for background music -->
+		<audio id="bg-audio" src="./files/music.mp3" preload="auto" loop></audio>
+		
+		<!-- Slide-out Shopping Cart Drawer -->
+		<div class="cart-overlay" id="cart-overlay" onclick="closeCartDrawer()"></div>
+		<div class="cart-drawer" id="cart-drawer">
+			<div class="cart-header">
+				<h3 class="cart-title">Carrito</h3>
+				<button onclick="closeCartDrawer()" class="cart-close-btn" aria-label="Close cart">✕</button>
+			</div>
+			<div class="cart-items-container" id="cart-items-list">
+				<!-- Cart items are dynamically injected here by app.js -->
+			</div>
+			<div class="cart-footer">
+				<div class="cart-summary-row">
+					<span class="cart-total-label">Subtotal</span>
+					<span class="cart-total-val" id="cart-total-val">$0</span>
+				</div>
+				<button onclick="window.appActions.checkout()" class="shop-btn-primary checkout-btn">Proceder al Pago</button>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__copy">© 2026 OPULENCE. Todos los derechos reservados.</div>
+				<ul class="footer__sociall">
+					<li class="footer__social-item">
+						<a href="#" class="footer__social-link --icon-dribbble">
+							<span class="visually-hidden">Dribbble</span>
+						</a>
+					</li>
+					<li class="footer__social-item">
+						<a href="#" class="footer__social-link --icon-github">
+							<span class="visually-hidden">GitHub</span>
+						</a>
+					</li>
+					<li class="footer__social-item">
+						<a href="#" class="footer__social-link --icon-discord">
+							<span class="visually-hidden">Discord</span>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="footer__privacy">Privacy Policy</a>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Firebase SDKs compat CDNs -->
+	<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+
+	<!-- Custom e-commerce configuration & SPA control logic -->
+	<script src="./js/config.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>

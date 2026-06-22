@@ -1,0 +1,24 @@
+{
+  "name": "OPULENCE",
+  "short_name": "OPULENCE",
+  "description": "Hyper-Luxury E-commerce Platform",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#E3000F",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./assets/img/logo-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/img/logo-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}
